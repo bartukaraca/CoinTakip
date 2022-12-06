@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1F2630"
+    tools:context=".ChangeNameActivity">
+
+    <Button
+        android:id="@+id/button7"
+        android:layout_width="335dp"
+        android:layout_height="0dp"
+
+        android:layout_marginBottom="37dp"
+        android:background="@drawable/signout"
+        android:fontFamily="@font/cuzel"
+        android:onClick="changeName"
+        android:text="Change Name"
+        android:textColor="@color/white"
+        app:layout_constraintBottom_toTopOf="@+id/textView22"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/editTextTextPersonName" />
+
+    <TextView
+        android:id="@+id/textView21"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginTop="88dp"
+        android:layout_marginBottom="39dp"
+        android:fontFamily="@font/cuzel"
+        android:text="Change Name and Surname"
+        android:textColor="@color/white"
+        android:textSize="23dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView22"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="29dp"
+        android:layout_marginBottom="468dp"
+        android:fontFamily="@font/cuzel"
+        android:onClick="backProfile"
+        android:text="Back to Your Account"
+        android:textColor="#0071DF"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/button7" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName"
+        android:layout_width="335dp"
+        android:layout_height="0dp"
+        android:layout_marginBottom="48dp"
+        android:ems="10"
+        android:fontFamily="@font/cuzel"
+        android:gravity="left"
+        android:hint="Enter Name and Surname"
+        android:inputType="textPersonName"
+        android:textColor="@color/white"
+        android:textColorHint="#9CA5B4"
+        android:textSize="16dp"
+        app:layout_constraintBottom_toTopOf="@+id/button7"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView21" />
+
+    <TextView
+        android:id="@+id/textView24"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="3dp"
+        android:fontFamily="@font/cuzel"
+        android:text=" Name and Surname"
+        android:textColor="#9CA5B4"
+        android:textSize="13dp"
+        app:layout_constraintBottom_toTopOf="@+id/editTextTextPersonName"
+        app:layout_constraintStart_toStartOf="@+id/editTextTextPersonName" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
